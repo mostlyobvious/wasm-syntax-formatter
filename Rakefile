@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-release = 'ruby-3.4-wasm32-unknown-wasip1-full'
+release = 'ruby-3.4-wasm32-unknown-wasip1-minimal'
 
 file "build/#{release}" do
   filename = "#{release}.tar.gz"
