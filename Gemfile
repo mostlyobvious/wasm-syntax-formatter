@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rake'
+gem 'js'
 gem 'rouge'
 gem 'ruby_wasm'
 gem 'syntax_tree'
