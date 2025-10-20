@@ -3,7 +3,6 @@ GEM
   specs:
     js (2.7.1)
     prettier_print (1.2.1)
-    rake (13.3.0)
     rouge (4.6.0)
     ruby_wasm (2.7.1-arm64-darwin)
     syntax_tree (6.3.0)
@@ -14,7 +13,6 @@ PLATFORMS
 
 DEPENDENCIES
   js
-  rake
   rouge
   ruby_wasm
   syntax_tree
