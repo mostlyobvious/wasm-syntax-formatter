@@ -6,10 +6,7 @@
     const { vm } = await DefaultRubyVM(module);
 
     const code = document.getElementById("code");
-
-    window.addEventListener("resize", () =>{
-      console.log(window.innerWidth)
-
+    const format = (width) => {
       code.innerHTML = 
         vm.eval(`
           require "js"
@@ -17,7 +14,7 @@
           require "rouge"
 
           max_width = 
-            case ${window.innerWidth}
+            case ${width}
             when 0..600 then 40
             when 600..1000 then 80
             else 120
@@ -137,7 +134,11 @@
             )
           )
         `).toString();
-    });
+    }; 
+
+    window.addEventListener("resize", () => format(window.innerWidth));
+
+    format(window.innerWidth);
   </script>
 
   <style>
